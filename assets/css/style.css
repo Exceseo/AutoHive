@@ -1,0 +1,17 @@
+/********************** 
+Theme Name : Nuty Sass
+Theme Author: Mustakim Islam
+Author URI: https://facebook.com/mamamostakin
+Tags: One page, business website, business template.
+Description: This is a business HTML template to create any kinds of business website.
+version: 1.0.0
+
+***********************/
+@import url(base/_variables.scss);
+@import url(base/_mixin.scss);
+@import url(components/_header.scss);
+@import url(components/_footer.scss);
+@import url(components/_breadcrubmp.scss);
+@import url(pages/_index-1.scss);
+@import url(theme/_anaimation.scss);
+@import url(theme/_them-class.scss);
