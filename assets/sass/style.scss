@@ -1,25 +1,30 @@
 /********************** 
-Theme Name : Nuty Sass
+Theme Name : Car Dealership HTML Template
 Theme Author: Mustakim Islam
 Author URI: https://facebook.com/mamamostakin
-Tags: One page, business website, business template.
-Description: This is a business HTML template to create any kinds of business website.
+Tags: car template, business website, Car Dealership HTML template.
+Description: This is a multipage HTML template to create any kinds of car website.
 version: 1.0.0
 
 ***********************/
-
 // Base
-@import url(base/_variables.scss);
-@import url(base/_mixin.scss);
+@import 'base/_variables';
+@import 'base/_mixin';
+@import 'base/_reset';
+@import 'base/_typography';
+@import 'base/_spacing';
 
 // components
-@import url(components/_header.scss);
-@import url(components/_footer.scss);
-@import url(components/_breadcrubmp.scss);
+@import 'components/_breadcrubmp';
+@import 'components/_header';
+@import 'components/_footer';
+
 
 // page
-@import url(pages/_index-1.scss);
+@import 'pages/_index-1.scss';
 
 // theme
-@import url(theme/_anaimation.scss);
-@import url(theme/_them-class.scss);
+@import 'theme/_anaimation.scss';
+@import 'theme/them-class';
+
+

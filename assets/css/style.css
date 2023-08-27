@@ -1,17 +1,373 @@
 /********************** 
-Theme Name : Nuty Sass
+Theme Name : Car Dealership HTML Template
 Theme Author: Mustakim Islam
 Author URI: https://facebook.com/mamamostakin
-Tags: One page, business website, business template.
-Description: This is a business HTML template to create any kinds of business website.
+Tags: car template, business website, Car Dealership HTML template.
+Description: This is a multipage HTML template to create any kinds of car website.
 version: 1.0.0
 
 ***********************/
-@import url(base/_variables.scss);
-@import url(base/_mixin.scss);
-@import url(components/_header.scss);
-@import url(components/_footer.scss);
-@import url(components/_breadcrubmp.scss);
-@import url(pages/_index-1.scss);
-@import url(theme/_anaimation.scss);
-@import url(theme/_them-class.scss);
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sail&display=swap");
+/*-------------- Defult-CSS ---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+body {
+  font-size: 16px; }
+
+ul, ol, li, p {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+span, a {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  text-decoration: none;
+  display: inline-block; }
+
+button {
+  border: 0;
+  background: transparent; }
+
+/* typography */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", sans-serif; }
+
+h1 {
+  font-size: 60px; }
+  @media (max-width: 991.98px) {
+    h1 {
+      font-size: 48px; } }
+
+h2 {
+  font-size: 42px; }
+  @media (max-width: 991.98px) {
+    h2 {
+      font-size: 38px; } }
+
+h3 {
+  font-size: 36px; }
+  @media (max-width: 991.98px) {
+    h3 {
+      font-size: 32px; } }
+
+h4 {
+  font-size: 30px; }
+
+h5 {
+  font-size: 24px; }
+
+h6 {
+  font-size: 20px; }
+
+/* Spacing */
+.pt-120 {
+  padding-top: 100px; }
+  @media (max-width: 767.98px) {
+    .pt-120 {
+      padding-top: 70px; } }
+
+.ptb-120 {
+  padding: 100px 0; }
+  @media (max-width: 767.98px) {
+    .ptb-120 {
+      padding: 70px 0; } }
+
+.ptb-60 {
+  padding: 60px 0; }
+
+.pt-30 {
+  padding-top: 30px; }
+
+.pt-40 {
+  padding-top: 40px; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+
+.pb-120 {
+  padding-bottom: 100px; }
+  @media (max-width: 767.98px) {
+    .pb-120 {
+      padding-bottom: 70px; } }
+
+.mt-32 {
+  margin-top: 32px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-60 {
+  margin-top: 60px; }
+
+.mt-80 {
+  margin-top: 80px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+/*---------- Header start -----------*/
+.header-top {
+  background: #F6F9FF;
+  padding: 10px 0; }
+
+.header-top .header-top-left p {
+  color: #111010;
+  font-weight: 450;
+  font-size: 14px; }
+
+.header-top .header-top-right span {
+  color: #111010;
+  font-weight: 450;
+  font-size: 14px; }
+
+.header-top .header-top-right a {
+  font-size: 14px; }
+  .header-top .header-top-right a svg {
+    margin-right: 6px; }
+
+.header-top .header-top-right span svg {
+  margin-right: 6px; }
+
+.header-top .header-top-right .header-location {
+  padding-right: 60px;
+  border-right: 2px solid #B1B1B1; }
+
+.header-top .header-top-right .header-phone {
+  padding: 0 60px 0 30px;
+  border-right: 2px solid #B1B1B1; }
+
+.header-top .header-top-right .header-email {
+  padding-right: 30px;
+  padding-left: 30px; }
+
+.nav-section {
+  padding: 16px 0;
+  background: #111010; }
+  .nav-section .nav-logo img {
+    width: 170px; }
+  .nav-section .nav-left-box {
+    width: 155px;
+    background: transparent;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 8px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s; }
+    .nav-section .nav-left-box:hover {
+      background: #FC0012; }
+      .nav-section .nav-left-box:hover span {
+        background: #111010; }
+        .nav-section .nav-left-box:hover span i {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+    .nav-section .nav-left-box span {
+      width: 32px;
+      height: 32px;
+      background: #FC0012;
+      border-radius: 50%;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-right: 12px; }
+      .nav-section .nav-left-box span i {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        font-size: 18px;
+        color: white;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s; }
+    .nav-section .nav-left-box p {
+      color: white; }
+  .nav-section .nav-right-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    margin-left: 20px; }
+    .nav-section .nav-right-btn span {
+      display: block;
+      -webkit-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s; }
+    .nav-section .nav-right-btn :nth-child(1) {
+      width: 32px;
+      height: 2.96px;
+      background: white;
+      border-radius: 3px; }
+    .nav-section .nav-right-btn :nth-child(2) {
+      width: 26px;
+      height: 2.96px;
+      background: white;
+      margin-top: 5px;
+      border-radius: 3px; }
+    .nav-section .nav-right-btn :nth-child(3) {
+      width: 20px;
+      height: 2.96px;
+      background: white;
+      margin-top: 5px;
+      border-radius: 3px; }
+    .nav-section .nav-right-btn:hover span {
+      width: 32px; }
+  .nav-section .nav-manu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .nav-section .nav-manu ul li {
+      margin-right: 30px;
+      position: relative; }
+      .nav-section .nav-manu ul li a {
+        padding: 15px 10px;
+        color: rgba(255, 255, 255, 0.8) !important; }
+        .nav-section .nav-manu ul li a:hover {
+          color: white !important; }
+      .nav-section .nav-manu ul li:hover .has-sub-manu {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg); }
+      .nav-section .nav-manu ul li .has-sub-manu {
+        position: absolute;
+        top: 108%;
+        left: 0;
+        min-width: 220px;
+        background: #111010;
+        border-radius: 6px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: rotateX(-90deg);
+        transform: rotateX(-90deg);
+        -webkit-transform-origin: top center;
+        -ms-transform-origin: top center;
+        transform-origin: top center;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s; }
+        .nav-section .nav-manu ul li .has-sub-manu li {
+          width: 100%;
+          border-bottom: 1px solid #ddd;
+          display: block; }
+          .nav-section .nav-manu ul li .has-sub-manu li a {
+            padding: 16px 12px;
+            width: 100%; }
+            .nav-section .nav-manu ul li .has-sub-manu li a:hover {
+              letter-spacing: .7px;
+              padding-left: 17px; }
+
+.nav-section .nav-manu ul li.arrow-down::after {
+  content: "\f078";
+  position: absolute;
+  right: -8px;
+  top: 29%;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  font-size: 15px; }
+
+.nav-section .nav-manu ul li:hover.arrow-down::after {
+  color: white !important;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.nav-section .nav-manu ul li.arrow-down-home::after {
+  content: "\f078";
+  position: absolute;
+  right: -15%;
+  top: 29%;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+
+.nav-section .nav-manu ul li:hover.arrow-down-home::after {
+  color: white !important;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.nav-section .nav-manu ul li.arrow-down-service::after {
+  content: "\f078";
+  position: absolute;
+  right: -8px;
+  top: 29%;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+
+.nav-section .nav-manu ul li:hover.arrow-down-service::after {
+  color: white !important;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.nav-manu ul li:last-child {
+  margin-right: 0; }
