@@ -8,6 +8,11 @@ version: 1.0.0
 
 ***********************/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sail&display=swap");
+.hero-section .hero-from form .hero-summit-btn {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
+
 /*-------------- Defult-CSS ---------------*/
 * {
   margin: 0;
@@ -355,8 +360,8 @@ h6 {
 
 header .popup-box-active {
   background: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(2.5rem);
+  backdrop-filter: blur(2.5rem);
   height: 102vh;
   max-width: 400px;
   position: absolute;
@@ -561,3 +566,87 @@ header .popup-box-active {
 @media (max-width: 575.98px) {
   .m-responsive {
     width: 50%; } }
+
+/* Hero section start */
+.hero-section {
+  background: url(../images/hero.png) no-repeat top center;
+  background-size: cover;
+  padding: 130px 0 350px; }
+  .hero-section .hero-title h1 {
+    color: white;
+    text-align: center;
+    max-width: 630px;
+    margin: 0 auto; }
+  .hero-section .hero-from {
+    margin-top: 60px; }
+    .hero-section .hero-from .serch-btn {
+      max-width: 630px;
+      margin: 0 auto 13px; }
+      .hero-section .hero-from .serch-btn button {
+        color: white;
+        margin-right: 18px;
+        pad: 2px; }
+        .hero-section .hero-from .serch-btn button :last-child {
+          margin: 0; }
+    .hero-section .hero-from form {
+      padding: 20px;
+      background: white;
+      max-width: 630px;
+      margin: 0 auto;
+      border-radius: 6px; }
+      .hero-section .hero-from form .all-in-here-form {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .hero-section .hero-from form .all-in-here-form .hero-select {
+          width: 100%;
+          border: 1px solid #E9E9E9;
+          padding: 12px 15px;
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-weight: 450;
+          font-size: 15px;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23c0c0c5' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-repeat: no-repeat;
+          background-position: right 15px center;
+          background-size: 16px 12px; }
+      .hero-section .hero-from form .hero-summit-btn {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        background: #FC0012;
+        color: #111010;
+        border-radius: 4px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        color: white; }
+        .hero-section .hero-from form .hero-summit-btn:hover {
+          background: #000;
+          color: #FC0012; }
+
+.activebtn {
+  background: white;
+  color: #FC0012 !important;
+  padding: 2px 20px;
+  border-radius: 4px;
+  position: relative; }
+  .activebtn::after {
+    content: "";
+    width: 22px;
+    height: 11px;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background: white; }
+
+/* Them Extra class*/
+.autohive {
+  color: #FC0012; }

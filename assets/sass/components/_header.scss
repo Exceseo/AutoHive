@@ -228,7 +228,7 @@
 header{
     .popup-box-active{
         background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(2.5rem);
         height: 102vh;
         max-width: 400px;
         position: absolute;
