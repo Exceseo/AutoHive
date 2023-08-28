@@ -165,7 +165,7 @@
         width: 32px;
     }    
     }
-    .nav-manu{
+    .nav-manu{ 
        
         
         ul{
@@ -225,12 +225,88 @@
         }
     }
 }
+header{
+    .popup-box-active{
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        height: 102vh;
+        max-width: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 50px;
+        display: none;
+        overflow: hidden;
+        overflow-y: scroll;
+        box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(12, 8, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(12, 8, 0, 0.5);
+        position: fixed;
+        z-index: 2;
+        @include screen-576 {
+            max-width: 250px;
+        }
+        .popup-logo{
+            img{
+                width: 200px;
+            }
+            text-align: left;
+            margin-bottom: 23px;
+            margin-top: -34px;
+        }
+        .mobile-menu-toggle{
+            position: relative;
+            left: 250px;
+            top: 2.5%;
+            color: #FC0012;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            background: #fafafa;
+            border-radius: 50%;
+            line-height: 40px;
+            @include screen-576 {
+                left: -30px !important;
+                top: -20px !important;
+            }
+        }
+        .popup-social{
+            margin-top: 15px;
+            @include screen-576 {
+                    display: flex;
+                    
+            }
+            a{
+                color: #fafafa;
+                margin-right: 5px;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #111010;
+                transition: all .4s;
+                flex-shrink: 0;
+                @include screen-576{
+                    width: 28px;
+                        height: 28px;
+                        line-height: 28px;
+                }
+                
+                &:hover{
+                    color: $primary-color;
+                    background: #ecebeb;;
+                }
+            }
+        }
+    }
+    
+}
 
 .nav-section .nav-manu ul li.arrow-down::after {
     content: "\f078";
     position: absolute;
     right: -8px;
-    top: 29%;
+    top: 31%;
     color: rgba(255, 255, 255, 0.8) !important;
     font-family: "Font Awesome 6 Free";
     font-weight: 700;
@@ -245,14 +321,15 @@
 
 
 .nav-section .nav-manu ul li.arrow-down-home::after {
-        content: "\f078";
-        position: absolute;
-        right: -15%;
-        top: 29%;
-        color: rgba(255, 255, 255, 0.8) !important;
-        font-family: "Font Awesome 6 Free";
-        font-weight: 700;
-        transition: all .4s;
+    content: "\f078";
+    position: absolute;
+    right: -10%;
+    top: 31%;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    transition: all .4s;
+    font-size: 15px;
     }
 
 .nav-section .nav-manu ul li:hover.arrow-down-home::after {
@@ -264,12 +341,13 @@
 .nav-section .nav-manu ul li.arrow-down-service::after {
         content: "\f078";
         position: absolute;
-        right: -8px;
-        top: 29%;
+        right: -7px;
+        top: 31%;
         color: rgba(255, 255, 255, 0.8) !important;
         font-family: "Font Awesome 6 Free";
         font-weight: 700;
         transition: all .4s;
+        font-size: 15px;
     }
 
 .nav-section .nav-manu ul li:hover.arrow-down-service::after {
@@ -283,10 +361,92 @@
 
 
 @include screen-992 {
+    header .popup-box-active .mobile-menu-toggle{
+    left: 194px;
+    top: -10px;
+    }
     .displaynone{
         display: none !important;
     }
+    .popup-box-active{
+
+        .nav-manu{
+       
+        
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    
+                    padding-right: 30px;
+                    a{
+                        font-size: 16px;
+                        padding: 15px 10px;
+                        color: black;
+                        font-weight: 500;
+                        width: 100%;
+                        border-bottom: 1px solid #a9a0a0;
+                    
+                        &:hover{
+                            color: $primary-color!important;
+                        }
+                        
+                    }
+                    position: relative;
+                   
+                    .has-sub-manu{  
+                        display: none;
+                            flex-direction: column;
+                            transition: all .4s;
+                            li{
+                                width: 100%;
+                                display: block;
+                                padding-left: 20px;
+                                a{
+                                    font-size: 15px;
+                                    padding: 16px 12px;
+                                    width: 100%;
+                                
+                                    &:hover{
+                                        letter-spacing: .7px;
+                                        padding-left: 17px;
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+        }
+    }
 }
+
+%misted {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: black !important;
+    font-weight: 700;
+    transition: all .4s;
+    font-size: 18px;
+    
+}
+#sub-icone1{
+    @extend %misted;
+}
+.sub-icone2{
+    @extend %misted;
+}
+#sub-icone3{
+    @extend %misted;
+}
+%iconeroted{
+    transform: rotate(90deg);
+    transition: all .4s;
+}
+.arrowm-down{
+    @extend %iconeroted;
+}
+
 @include screen-576 {
     .m-responsive{
         width: 50%;
