@@ -362,7 +362,7 @@ header .popup-box-active {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 50px;
+  padding: 50px 40px;
   display: none;
   overflow: hidden;
   overflow-y: scroll;
@@ -372,7 +372,8 @@ header .popup-box-active {
   z-index: 2; }
   @media (max-width: 575.98px) {
     header .popup-box-active {
-      max-width: 250px; } }
+      max-width: 250px;
+      padding: 50px 22px !important; } }
   header .popup-box-active .popup-logo {
     text-align: left;
     margin-bottom: 23px;
@@ -392,8 +393,8 @@ header .popup-box-active {
     line-height: 40px; }
     @media (max-width: 575.98px) {
       header .popup-box-active .mobile-menu-toggle {
-        left: -30px !important;
-        top: -20px !important; } }
+        left: 161px !important;
+        top: -31px !important; } }
   header .popup-box-active .popup-social {
     margin-top: 15px; }
     @media (max-width: 575.98px) {
