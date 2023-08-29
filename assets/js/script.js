@@ -28,26 +28,10 @@ $(function(){
         // hero section
         
       $(".hero-btn").on("click", function () {
-        $(this).toggleClass("activebtn");
-        // $(".used, .new").css(
-        //   {
-        //     position: 'absolute',
-        //     top: '19px',
-        //     left: '26.6%'
-        //   }
-        // );
+        // $(this).toggleClass("activebtn");
 
-        var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
-        var $grid = $('.grid').isotope();
+        $(this).addClass('activebtn').removeClass('activebtn');
 
-        $('.serch-btn').each( function( i, buttonGroup ) {
-          var $buttonGroup = $( buttonGroup );
-          $buttonGroup.on( 'click', 'button', function() {
-            $buttonGroup.find('.is-checked').removeClass('is-checked');
-            $( this ).addClass('is-checked');
-          });
         });
         
 
