@@ -520,7 +520,7 @@ header .popup-box-active {
         color: black;
         font-weight: 500;
         width: 100%;
-        border-bottom: 1px solid #a9a0a0; }
+        border-bottom: 1px solid #E9E9E9; }
         .popup-box-active .nav-manu ul li a:hover {
           color: #FC0012 !important; }
       .popup-box-active .nav-manu ul li .has-sub-manu {
@@ -585,13 +585,13 @@ header .popup-box-active {
       .hero-section .hero-from .serch-btn button {
         color: white;
         margin-right: 18px;
-        pad: 2px; }
+        padding: 2px 20px; }
         .hero-section .hero-from .serch-btn button :last-child {
           margin: 0; }
     .hero-section .hero-from form {
       padding: 20px;
       background: white;
-      max-width: 630px;
+      width: 630px;
       margin: 0 auto;
       border-radius: 6px; }
       .hero-section .hero-from form .all-in-here-form {

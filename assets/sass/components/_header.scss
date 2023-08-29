@@ -386,7 +386,7 @@ header{
                         color: black;
                         font-weight: 500;
                         width: 100%;
-                        border-bottom: 1px solid #a9a0a0;
+                        border-bottom: 1px solid $border-color;
                     
                         &:hover{
                             color: $primary-color!important;

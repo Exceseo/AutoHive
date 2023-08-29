@@ -20,7 +20,7 @@
             button{
                 color: $white-color;
                 margin-right: 18px;
-                pad: 2px;
+                padding: 2px 20px;
                 
                 :last-child{
                     margin: 0;
@@ -30,7 +30,7 @@
         form{
             padding: 20px;
             background: $white-color;
-            max-width: 630px;
+            width: 630px;
             margin: 0 auto;
             border-radius: 6px;
             
@@ -76,6 +76,7 @@
 
 
 }
+
 .activebtn{
     background: $white-color;
     color: $primary-color !important;
