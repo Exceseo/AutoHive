@@ -8,7 +8,7 @@ version: 1.0.0
 
 ***********************/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sail&display=swap");
-.hero-section .hero-from form .hero-summit-btn {
+header .popup-box-active, .hero-section .hero-from form .hero-summit-btn, .hero-section .hero-left .hero-social a, .hero-section .hero-right-arrows {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s; }
@@ -349,7 +349,7 @@ h6 {
         transition: all .4s; }
         .nav-section .nav-manu ul li .has-sub-manu li {
           width: 100%;
-          border-bottom: 1px solid #ddd;
+          border-bottom: 1px solid #9c9c9c;
           display: block; }
           .nav-section .nav-manu ul li .has-sub-manu li a {
             padding: 16px 12px;
@@ -364,11 +364,9 @@ header .popup-box-active {
   backdrop-filter: blur(2.5rem);
   height: 102vh;
   max-width: 400px;
-  position: absolute;
-  right: 0;
+  right: -602px;
   top: 0;
   padding: 50px 40px;
-  display: none;
   overflow: hidden;
   overflow-y: scroll;
   -webkit-box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(12, 8, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(12, 8, 0, 0.5);
@@ -436,6 +434,8 @@ header .popup-box-active {
       header .popup-box-active .popup-social a:hover {
         color: #FC0012;
         background: #ecebeb; }
+  header .popup-box-active.open {
+    right: 0; }
 
 .nav-section .nav-manu ul li.arrow-down::after {
   content: "\f078";
@@ -520,7 +520,7 @@ header .popup-box-active {
         color: black;
         font-weight: 500;
         width: 100%;
-        border-bottom: 1px solid #E9E9E9; }
+        border-bottom: 1px solid #9c9c9c; }
         .popup-box-active .nav-manu ul li a:hover {
           color: #FC0012 !important; }
       .popup-box-active .nav-manu ul li .has-sub-manu {
@@ -571,7 +571,8 @@ header .popup-box-active {
 .hero-section {
   background: url(../images/hero.png) no-repeat top center;
   background-size: cover;
-  padding: 130px 0 350px; }
+  padding: 130px 0 350px;
+  position: relative; }
   .hero-section .hero-title h1 {
     color: white;
     text-align: center;
@@ -585,7 +586,10 @@ header .popup-box-active {
       .hero-section .hero-from .serch-btn button {
         color: white;
         margin-right: 18px;
-        padding: 2px 20px; }
+        padding: 2px 20px;
+        font-weight: 500; }
+        .hero-section .hero-from .serch-btn button a {
+          color: inherit; }
         .hero-section .hero-from .serch-btn button :last-child {
           margin: 0; }
     .hero-section .hero-from form {
@@ -601,7 +605,7 @@ header .popup-box-active {
         display: flex; }
         .hero-section .hero-from form .all-in-here-form .hero-select {
           width: 100%;
-          border: 1px solid #E9E9E9;
+          border: 1px solid #e9e3e3e7;
           padding: 12px 15px;
           font-family: "Plus Jakarta Sans", sans-serif;
           font-weight: 450;
@@ -626,14 +630,58 @@ header .popup-box-active {
         .hero-section .hero-from form .hero-summit-btn:hover {
           background: #000;
           color: #FC0012; }
+  .hero-section .hero-left {
+    position: absolute;
+    left: 24px;
+    bottom: 22%;
+    padding: 5px; }
+    .hero-section .hero-left .hero-social a {
+      margin-top: 22px;
+      color: white;
+      font-size: 16px; }
+      .hero-section .hero-left .hero-social a:hover {
+        color: #FC0012; }
+    .hero-section .hero-left .left-content span {
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      margin-left: -26px;
+      margin-top: 42px;
+      color: white;
+      position: relative; }
+      .hero-section .hero-left .left-content span::before {
+        content: "";
+        height: 45px;
+        width: 2px;
+        background: #fff;
+        position: absolute;
+        left: -25px;
+        top: -7px;
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        border-radius: 1px; }
+  .hero-section .hero-right-arrows {
+    position: absolute;
+    right: 24px;
+    bottom: 10%; }
+    .hero-section .hero-right-arrows:hover .hero-scrol-text {
+      color: #FC0012; }
+    .hero-section .hero-right-arrows .hero-scrol-text {
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      margin-top: 50px;
+      margin-right: 0px;
+      color: white; }
 
-.activebtn {
+.activebtn, .actived {
   background: white;
   color: #FC0012 !important;
   padding: 2px 20px;
   border-radius: 4px;
   position: relative; }
-  .activebtn::after {
+  .activebtn::after, .actived::after {
     content: "";
     width: 22px;
     height: 11px;

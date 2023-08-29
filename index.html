@@ -186,92 +186,123 @@
             </div>
             
             <div class="hero-from">
-                <div class="serch-btn d-flex text-center">
-                    <button class="hero-btn" data-filter=".all">All</button>
-                    <button class="hero-btn" data-filter=".new">New</button>
-                    <button class="hero-btn" data-filter=".used">Used</button>
-                </div>
-                <div class="form-add grid">
-                    <div class="used personalmean">
-                        <form action="#" class="hero-from-selcet-option" id="own-foem">
-                            <div class="all-in-here-form gap-3">
-                                <select class="hero-select">
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                </select>
-                                <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
+
+
+
+
+
+
+                <ul class="serch-btn d-flex text-center nav nav-tabs border-0">
+                    <li><button class="hero-btn actived"><a href="#all" class="active" data-bs-toggle="tab">All</a></button></li>
+                    <li><button class="hero-btn"><a href="#new" data-bs-toggle="tab">New</a></button></li>
+                    <li><button class="hero-btn"><a href="#used" data-bs-toggle="tab">Used</a></button></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="all">
+                        <div class="used personalmean">
+                            <form action="#" class="hero-from-selcet-option" id="own-foem">
+                                <div class="all-in-here-form gap-3">
+                                    <select class="hero-select">
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                    </select>
+                                    <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="new personalmean">
-                        <form action="#" class="hero-from-selcet-option" id="own-foem">
-                            <div class="all-in-here-form gap-3">
-                                <select class="hero-select">
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                </select>
-                                <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
+                    <div class="tab-pane fade" id="new">
+                        <div class="used personalmean">
+                            <form action="#" class="hero-from-selcet-option" id="own-foem">
+                                <div class="all-in-here-form gap-3">
+                                    <select class="hero-select">
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                    </select>
+                                    <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="all personalmean">
-                        <form action="#" class="hero-from-selcet-option" id="own-foem">
-                            <div class="all-in-here-form gap-3">
-                                <select class="hero-select">
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                    <option>All Makes</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                    <option>All Models</option>
-                                </select>
-                                <select class="hero-select">
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                    <option>Transmission</option>
-                                </select>
-                                <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
+                    <div class="tab-pane fade" id="used">
+                        <div class="used personalmean">
+                            <form action="#" class="hero-from-selcet-option" id="own-foem">
+                                <div class="all-in-here-form gap-3">
+                                    <select class="hero-select">
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                        <option>All Makes</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                        <option>All Models</option>
+                                    </select>
+                                    <select class="hero-select">
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                        <option>Transmission</option>
+                                    </select>
+                                    <button type="submit" class="hero-summit-btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 
             </div>
-            <div class="hero-left-social">
-
+            <div class="hero-left">
+                <div class="hero-social d-flex flex-column justify-content-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="left-content">
+                    <span>Follow on</span>
+                </div>
+            </div>
+            <div class="hero-right-arrows d-flex flex-column align-items-center">
+                <div class="icon-wrapeer">
+                    <span><svg width="32" height="59" viewBox="0 0 32 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="28" height="41" rx="14" stroke="#FC0012" stroke-width="2.5"/>
+                        <path d="M21.334 52L16.2151 57.215M16.2151 57.215L11.0001 52M16.2151 57.215L16.2151 29" stroke="#FC0012" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </div>
+                <span class="hero-scrol-text">Scroll Down</span>
             </div>
         </div>
     </section>

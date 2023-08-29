@@ -2,7 +2,7 @@ $(function(){
 
     // nav manu toggle
     $(".mobile-menu-toggle").on("click", function () {
-      $(".popup-box-active").fadeToggle();
+      $(".popup-box-active").toggleClass("open").fadein();
       });
     
       $(".popup-box-active .nav-manu ul li a").each(function () {
@@ -25,16 +25,17 @@ $(function(){
 
 
 
-        // hero section
-        
+        // hero section button 
       $(".hero-btn").on("click", function () {
-        // $(this).toggleClass("activebtn");
+        $(".hero-btn").removeClass("activebtn");
+        $(".hero-btn").removeClass("actived");
+        $(this).toggleClass("activebtn");
+       });
 
-        $(this).addClass('activebtn').removeClass('activebtn');
-
-        });
+    
         
+  
 
+        
 
 });
-
