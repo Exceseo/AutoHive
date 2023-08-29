@@ -3,12 +3,27 @@
     background: url(../images/hero.png) no-repeat top center;
     background-size: cover;
     padding: 130px 0 350px;
+    @include screen-992 {
+        padding: 130px 0 220px;
+    } 
+    @include screen-576 {
+        padding: 110px 0 170px
+    }
     .hero-title{
         h1{
             color: $white-color;
             text-align: center;
-            max-width: 630px;
+            max-width: 700px;
             margin: 0 auto;
+            @include screen-576 {
+                font-size: 42px;
+            }
+            @include screen-460 {
+                font-size: 36px;
+            }
+            @include screen-400 {
+                font-size: 32px;
+            }
         }
     }
     
@@ -34,13 +49,19 @@
         form{
             padding: 20px;
             background: $white-color;
-            width: 630px;
+            max-width: 650px;
             margin: 0 auto;
             border-radius: 6px;
+            @include screen-992 {
+                margin: 0;
+            }
             
             .all-in-here-form{
                 width: 100%;
                 display: flex;
+                @include screen-768 {
+                    flex-direction: column;
+                }
                 .hero-select{
                     width: 100%;
                     border: 1px solid $border-color2;
@@ -73,12 +94,19 @@
                     background: #000;
                     color: $primary-color;
                 }
+                @include screen-768 {
+                    width: 150px;
+                    margin: 5px auto 0;
+                }
             }
             
         }
     }
     position: relative;
     .hero-left{
+        @include screen-992 {
+            display: none !important;
+        } 
         position: absolute;
         left: 24px;
         bottom: 22%;
@@ -112,15 +140,17 @@
                     transform: rotate(270deg);
                     border-radius: 1px;
                 }
-        }}
+        }
+           
+    }
     }
     .hero-right-arrows{
         position: absolute;
-        right: 24px;
+        right: 15px;
         bottom: 10%;
         @extend %tns;
         .icon-wrapeer {
-            
+            font-size: 18px;
         }&:hover .hero-scrol-text{
             color: $primary-color;
         }
@@ -131,7 +161,9 @@
             color: $white-color;
             
         }
-        
+        @include screen-992 {
+            display: none !important;
+        }  
     }
 
     

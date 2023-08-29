@@ -14,6 +14,9 @@ h1,h2,h3,h4,h5,h6{
 h1 {
     font-size: 60px;
     @include screen-992 {
+        font-size: 58px;
+    }
+    @include screen-768 {
         font-size: 48px;
     }
 }

@@ -54,6 +54,9 @@ h1 {
   font-size: 60px; }
   @media (max-width: 991.98px) {
     h1 {
+      font-size: 58px; } }
+  @media (max-width: 767.98px) {
+    h1 {
       font-size: 48px; } }
 
 h2 {
@@ -573,11 +576,26 @@ header .popup-box-active {
   background-size: cover;
   padding: 130px 0 350px;
   position: relative; }
+  @media (max-width: 991.98px) {
+    .hero-section {
+      padding: 130px 0 220px; } }
+  @media (max-width: 575.98px) {
+    .hero-section {
+      padding: 110px 0 170px; } }
   .hero-section .hero-title h1 {
     color: white;
     text-align: center;
-    max-width: 630px;
+    max-width: 700px;
     margin: 0 auto; }
+    @media (max-width: 575.98px) {
+      .hero-section .hero-title h1 {
+        font-size: 42px; } }
+    @media (max-width: 460px) {
+      .hero-section .hero-title h1 {
+        font-size: 36px; } }
+    @media (max-width: 400px) {
+      .hero-section .hero-title h1 {
+        font-size: 32px; } }
   .hero-section .hero-from {
     margin-top: 60px; }
     .hero-section .hero-from .serch-btn {
@@ -595,14 +613,23 @@ header .popup-box-active {
     .hero-section .hero-from form {
       padding: 20px;
       background: white;
-      width: 630px;
+      max-width: 650px;
       margin: 0 auto;
       border-radius: 6px; }
+      @media (max-width: 991.98px) {
+        .hero-section .hero-from form {
+          margin: 0; } }
       .hero-section .hero-from form .all-in-here-form {
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+        @media (max-width: 767.98px) {
+          .hero-section .hero-from form .all-in-here-form {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; } }
         .hero-section .hero-from form .all-in-here-form .hero-select {
           width: 100%;
           border: 1px solid #e9e3e3e7;
@@ -630,11 +657,18 @@ header .popup-box-active {
         .hero-section .hero-from form .hero-summit-btn:hover {
           background: #000;
           color: #FC0012; }
+        @media (max-width: 767.98px) {
+          .hero-section .hero-from form .hero-summit-btn {
+            width: 150px;
+            margin: 5px auto 0; } }
   .hero-section .hero-left {
     position: absolute;
     left: 24px;
     bottom: 22%;
     padding: 5px; }
+    @media (max-width: 991.98px) {
+      .hero-section .hero-left {
+        display: none !important; } }
     .hero-section .hero-left .hero-social a {
       margin-top: 22px;
       color: white;
@@ -663,8 +697,10 @@ header .popup-box-active {
         border-radius: 1px; }
   .hero-section .hero-right-arrows {
     position: absolute;
-    right: 24px;
+    right: 15px;
     bottom: 10%; }
+    .hero-section .hero-right-arrows .icon-wrapeer {
+      font-size: 18px; }
     .hero-section .hero-right-arrows:hover .hero-scrol-text {
       color: #FC0012; }
     .hero-section .hero-right-arrows .hero-scrol-text {
@@ -674,6 +710,9 @@ header .popup-box-active {
       margin-top: 50px;
       margin-right: 0px;
       color: white; }
+    @media (max-width: 991.98px) {
+      .hero-section .hero-right-arrows {
+        display: none !important; } }
 
 .activebtn, .actived {
   background: white;
