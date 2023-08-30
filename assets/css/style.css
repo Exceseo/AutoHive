@@ -753,6 +753,7 @@ header .popup-box-active {
   margin-bottom: 40px; }
   .sec-title h2 {
     max-width: 400px;
+    font-weight: 650;
     margin: 0 auto; }
   .sec-title p {
     max-width: 550px;
