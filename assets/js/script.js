@@ -32,8 +32,14 @@ $(function(){
         $(this).toggleClass("activebtn");
        });
 
-    
-        
+       
+
+     // Way choose us slick slider
+     $('.wc-main-slick').slick({
+      arrows: false,
+      dots: true,
+      
+     });
   
 
         

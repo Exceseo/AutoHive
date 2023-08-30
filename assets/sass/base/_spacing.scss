@@ -3,13 +3,13 @@
 .pt-120 {
     padding-top: 100px;
     @include screen-768 {
-        padding-top: 70px;
+        padding-top: 80px;
     }
 }
 .ptb-120 {
     padding: 100px 0;
     @include screen-768 {
-        padding: 70px 0;
+        padding: 80px 0;
     }
 }
 .ptb-60 {
@@ -28,6 +28,18 @@
     padding-bottom: 40px;
 }
 .pb-120 {
+    padding-bottom: 120px;
+    @include screen-768 {
+        padding-bottom: 80px;
+    }
+}
+.pt-100 {
+    padding-top: 100px;
+    @include screen-768 {
+        padding-bottom: 70px;
+    }
+}
+.pb-100 {
     padding-bottom: 100px;
     @include screen-768 {
         padding-bottom: 70px;
