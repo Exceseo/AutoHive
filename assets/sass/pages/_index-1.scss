@@ -294,46 +294,15 @@
                 @include screen-1300{
                     font-size: 24px;
                 }
+                margin-bottom: 20px;
             }
             a{
-                margin-top: 20px;
-                color: $white-color;
-                background: $primary-color;
-                padding: 10px 20px;
-                border-radius: 4px;
-                transition: all .4s;
-                position: relative;
-                z-index: 1;
-                overflow: hidden;
-                font-size: 17px;
-                font-weight: 500;
-                @include screen-1200{
-                    font-size: 16px;
-                    padding: 10px 16px;
-                }
+            @extend %theme-btn;
                 i{
                     margin-left: 4px;
                     font-size: 15px;
                 }
-                
-                &::after{
-                    content: "";
-                    width: 200%;
-                    height: 200%;
-                    position: absolute;
-                    left: -50%;
-                    top: 50px;
-                    background: $heding-primary-color;
-                    border-radius: 50%;
-                    z-index: -1;
-                    @extend %tns;
-                }
-
-                
-                &:hover::after{
-                    top: -10px;
-                    background: $heding-primary-color;
-                }
+            
             }
         }
         .wc-slider-img{
@@ -525,3 +494,123 @@
     }
 }
 
+/*-------------- Call to action section -------------------*/
+.calltoaction-section{
+    padding: 120px 0;
+    background: url(../images/actioncar.png) no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-position: right center;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        background: linear-gradient(90deg, #151414 41.73%, rgba(0, 6, 39, 0.00) 99.79%);
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/Shape.png) no-repeat;
+        
+        z-index: -1;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../images/Overly.png) no-repeat;
+            z-index: 1;
+        }
+    }
+    .action-title{
+        h2{
+            font-weight: 700;
+            color: $white-color;
+            max-width: 600px;
+            margin: 0 auto 16px;
+            @include screen-992{
+                font-size: 36px;
+            }
+            @include screen-576{
+                font-size: 30px;
+            }
+            @include screen-460{
+                font-size: 26px;
+            }
+            @include screen-392{
+                font-size: 24px;
+            }
+        }
+        p{
+            color: $white-color;
+            max-width: 680px;
+            margin: 0 auto 48px;
+            @include screen-768{
+                font-size: 14px;
+            }
+
+        }
+        .action-btn{
+            :last-child{
+                background: $white-color;
+                color: $heding-color;
+                font-weight: 450;
+                &:hover{
+                    color: $white-color;
+                }
+                &:hover::after{
+                    background: $primary-color;
+                }
+            }
+            a{
+                color: $white-color;
+                background: $primary-color;
+                padding: 16px 40px;
+                border-radius: 4px;
+                border: 1px solid transparent;
+                transition: all .4s;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                font-size: 17px;
+                font-weight: 500;
+                @include screen-1200{
+                    font-size: 16px;
+                    padding: 14px 17px;
+                }
+                
+                &::after{
+                    content: "";
+                    width: 200%;
+                    height: 200%;
+                    position: absolute;
+                    left: -50%;
+                    top: 65px;
+                    background: $primary-color;
+                    border-radius: 50%;
+                    
+                    z-index: -1;
+                    @extend %tns;
+                }
+
+                
+                &:hover::after{
+                    top: -10px;
+                    background: $heding-primary-color;
+                }
+            }
+        }
+    }
+}

@@ -8,11 +8,6 @@ version: 1.0.0
 
 ***********************/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sail&display=swap");
-header .popup-box-active, .hero-section .hero-from form .hero-summit-btn, .hero-section .hero-left .hero-social a, .hero-section .hero-right-arrows, .wc-column, .brand-us .brand-img-wwraper, .wc-slider-up .wc-slider .wc-slider-content a::after {
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s; }
-
 /*-------------- Defult-CSS ---------------*/
 * {
   margin: 0;
@@ -836,44 +831,14 @@ header .popup-box-active {
       margin-bottom: 8px; }
     .wc-slider-up .wc-slider .wc-slider-content h4 {
       color: white;
-      max-width: 320px; }
+      max-width: 320px;
+      margin-bottom: 20px; }
       @media (max-width: 1299.98px) {
         .wc-slider-up .wc-slider .wc-slider-content h4 {
           font-size: 24px; } }
-    .wc-slider-up .wc-slider .wc-slider-content a {
-      margin-top: 20px;
-      color: white;
-      background: #FC0012;
-      padding: 10px 20px;
-      border-radius: 4px;
-      -webkit-transition: all .4s;
-      -o-transition: all .4s;
-      transition: all .4s;
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-      font-size: 17px;
-      font-weight: 500; }
-      @media (max-width: 1199.98px) {
-        .wc-slider-up .wc-slider .wc-slider-content a {
-          font-size: 16px;
-          padding: 10px 16px; } }
-      .wc-slider-up .wc-slider .wc-slider-content a i {
-        margin-left: 4px;
-        font-size: 15px; }
-      .wc-slider-up .wc-slider .wc-slider-content a::after {
-        content: "";
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        left: -50%;
-        top: 50px;
-        background: #111010;
-        border-radius: 50%;
-        z-index: -1; }
-      .wc-slider-up .wc-slider .wc-slider-content a:hover::after {
-        top: -10px;
-        background: #111010; }
+    .wc-slider-up .wc-slider .wc-slider-content a i {
+      margin-left: 4px;
+      font-size: 15px; }
   .wc-slider-up .wc-slider .wc-slider-img img.caroffer {
     position: relative;
     top: -8px;
@@ -1048,6 +1013,145 @@ header .popup-box-active {
       width: 50%;
       height: 50%; }
 
+/*-------------- Call to action section -------------------*/
+.calltoaction-section {
+  padding: 120px 0;
+  background: url(../images/actioncar.png) no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: right center;
+  z-index: 1;
+  width: 100%;
+  height: auto; }
+  .calltoaction-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background: -webkit-gradient(linear, left top, right top, color-stop(41.73%, #151414), color-stop(99.79%, rgba(0, 6, 39, 0)));
+    background: -webkit-linear-gradient(left, #151414 41.73%, rgba(0, 6, 39, 0) 99.79%);
+    background: -o-linear-gradient(left, #151414 41.73%, rgba(0, 6, 39, 0) 99.79%);
+    background: linear-gradient(90deg, #151414 41.73%, rgba(0, 6, 39, 0) 99.79%); }
+  .calltoaction-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/Shape.png) no-repeat;
+    z-index: -1; }
+    .calltoaction-section .overlay::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/Overly.png) no-repeat;
+      z-index: 1; }
+  .calltoaction-section .action-title h2 {
+    font-weight: 700;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 16px; }
+    @media (max-width: 991.98px) {
+      .calltoaction-section .action-title h2 {
+        font-size: 36px; } }
+    @media (max-width: 575.98px) {
+      .calltoaction-section .action-title h2 {
+        font-size: 30px; } }
+    @media (max-width: 460px) {
+      .calltoaction-section .action-title h2 {
+        font-size: 26px; } }
+    @media (max-width: 400px) {
+      .calltoaction-section .action-title h2 {
+        font-size: 24px; } }
+  .calltoaction-section .action-title p {
+    color: white;
+    max-width: 680px;
+    margin: 0 auto 48px; }
+    @media (max-width: 767.98px) {
+      .calltoaction-section .action-title p {
+        font-size: 14px; } }
+  .calltoaction-section .action-title .action-btn :last-child {
+    background: white;
+    color: #000000;
+    font-weight: 450; }
+    .calltoaction-section .action-title .action-btn :last-child:hover {
+      color: white; }
+    .calltoaction-section .action-title .action-btn :last-child:hover::after {
+      background: #FC0012; }
+  .calltoaction-section .action-title .action-btn a {
+    color: white;
+    background: #FC0012;
+    padding: 16px 40px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 500; }
+    @media (max-width: 1199.98px) {
+      .calltoaction-section .action-title .action-btn a {
+        font-size: 16px;
+        padding: 14px 17px; } }
+    .calltoaction-section .action-title .action-btn a::after {
+      content: "";
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      left: -50%;
+      top: 65px;
+      background: #FC0012;
+      border-radius: 50%;
+      z-index: -1; }
+    .calltoaction-section .action-title .action-btn a:hover::after {
+      top: -10px;
+      background: #111010; }
+
 /* Them Extra class*/
 .autohive {
   color: #FC0012; }
+
+.wc-slider-up .wc-slider .wc-slider-content a {
+  color: white;
+  background: #FC0012;
+  padding: 10px 20px;
+  border-radius: 4px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 500; }
+  @media (max-width: 1199.98px) {
+    .wc-slider-up .wc-slider .wc-slider-content a {
+      font-size: 16px;
+      padding: 10px 16px; } }
+  .wc-slider-up .wc-slider .wc-slider-content a::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    left: -50%;
+    top: 50px;
+    background: #111010;
+    border-radius: 50%;
+    z-index: -1; }
+  .wc-slider-up .wc-slider .wc-slider-content a:hover::after {
+    top: -10px;
+    background: #111010; }
+
+header .popup-box-active, .hero-section .hero-from form .hero-summit-btn, .hero-section .hero-left .hero-social a, .hero-section .hero-right-arrows, .wc-column, .brand-us .brand-img-wwraper, .calltoaction-section .action-title .action-btn a::after, .wc-slider-up .wc-slider .wc-slider-content a::after {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s; }
