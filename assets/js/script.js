@@ -42,6 +42,11 @@ $(function(){
      });
   
 
-        
+        // feacured section 
+        $(".filter-btn").on("click", function () {
+          $(".filter-btn").removeClass("bg-red");
+          $(".filter-btn").removeClass(".bg-red");
+          $(this).toggleClass("bg-red");
+         });
 
 });
