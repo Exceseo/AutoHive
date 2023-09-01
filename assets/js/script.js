@@ -48,5 +48,14 @@ $(function(){
           $(".filter-btn").removeClass(".bg-red");
           $(this).toggleClass("bg-red");
          });
+        
+        var $grid = $('.featured-grid').isotope();
+
+        $('.feature-filetr-btn').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+
+
 
 });
