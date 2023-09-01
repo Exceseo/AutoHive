@@ -656,6 +656,10 @@
         position: relative;
         transition: all .4s;
         overflow: hidden;
+        @extend %tns;
+        &:hover{
+            box-shadow: 20px 40px 67.6129px 0px rgba(0, 23, 104, 0.10);
+        }
         &:hover .featured-action span{
             visibility: visible;
             top: 15px;

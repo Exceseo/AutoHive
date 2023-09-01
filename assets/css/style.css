@@ -1149,6 +1149,9 @@ header .popup-box-active {
     -o-transition: all .4s;
     transition: all .4s;
     overflow: hidden; }
+    .feature-section .featured-listing-culoumn:hover {
+      -webkit-box-shadow: 20px 40px 67.6129px 0px rgba(0, 23, 104, 0.1);
+      box-shadow: 20px 40px 67.6129px 0px rgba(0, 23, 104, 0.1); }
     .feature-section .featured-listing-culoumn:hover .featured-action span {
       visibility: visible;
       top: 15px;
@@ -1337,7 +1340,7 @@ header .popup-box-active {
     top: -10px;
     background: #111010; }
 
-header .popup-box-active, .hero-section .hero-from form .hero-summit-btn, .hero-section .hero-left .hero-social a, .hero-section .hero-right-arrows, .wc-column, .brand-us .brand-img-wwraper, .call-to-action .calltoaction-section .action-title .action-btn a::after, .feature-section .featured-listing-culoumn .feature-top::after, .feature-section .featured-listing-culoumn .feature-top img, .wc-slider-up .wc-slider .wc-slider-content a::after {
+header .popup-box-active, .hero-section .hero-from form .hero-summit-btn, .hero-section .hero-left .hero-social a, .hero-section .hero-right-arrows, .wc-column, .brand-us .brand-img-wwraper, .call-to-action .calltoaction-section .action-title .action-btn a::after, .feature-section .featured-listing-culoumn, .feature-section .featured-listing-culoumn .feature-top::after, .feature-section .featured-listing-culoumn .feature-top img, .wc-slider-up .wc-slider .wc-slider-content a::after {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s; }
