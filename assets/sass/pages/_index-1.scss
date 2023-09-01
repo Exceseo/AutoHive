@@ -657,6 +657,9 @@
         transition: all .4s;
         overflow: hidden;
         @extend %tns;
+        @include screen-768{
+            height: auto !important  ;
+        }
         &:hover{
             box-shadow: 20px 40px 67.6129px 0px rgba(0, 23, 104, 0.10);
         }
@@ -828,6 +831,9 @@
         .featured-listing-culoumn{
            
             height: 490px;
+            @include screen-1200{
+                height: auto !important;
+            }
             .featured-bottom{
                 padding: 30px 15px 28px;
             }
