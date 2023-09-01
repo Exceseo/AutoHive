@@ -624,17 +624,41 @@
 /*-------------- Featured section -------------------*/
 .feature-section{
     padding: 120px 0 100px;
+    @include screen-992{
+        padding: 80px 0 70px;
+    }
     .feature-title{
+        @include screen-992{
+            text-align: center;
+            margin-bottom: 24px;
+        }
         h2{
             font-weight: 700;
             margin-bottom: 16px;
         }
         p{
             color: $text-color;
+            @include screen-460{
+                font-size: 15px;
+            }
         }
     }
     .feature-filetr-btn{
         button{
+            &:last-child{
+                margin-right: 0;
+            }
+            @include screen-576{
+                padding: 10px 25px;
+            }
+            @include screen-460{
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+            @include screen-392{
+                padding: 10px 18px;
+                font-size: 14px;
+            }
             margin-right: 16px;
             padding: 10px 30px;
             font-weight: 500;
@@ -660,6 +684,9 @@
         @include screen-768{
             height: auto !important  ;
         }
+        
+        
+
         &:hover{
             box-shadow: 20px 40px 67.6129px 0px rgba(0, 23, 104, 0.10);
         }
@@ -857,4 +884,9 @@
             }
     }
 }
+}
+.main-gird{
+    @include screen-768{
+        top: 670px;
+    }
 }

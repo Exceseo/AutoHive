@@ -1124,11 +1124,21 @@ header .popup-box-active {
 /*-------------- Featured section -------------------*/
 .feature-section {
   padding: 120px 0 100px; }
+  @media (max-width: 991.98px) {
+    .feature-section {
+      padding: 80px 0 70px; } }
+  @media (max-width: 991.98px) {
+    .feature-section .feature-title {
+      text-align: center;
+      margin-bottom: 24px; } }
   .feature-section .feature-title h2 {
     font-weight: 700;
     margin-bottom: 16px; }
   .feature-section .feature-title p {
     color: #5F5F5F; }
+    @media (max-width: 460px) {
+      .feature-section .feature-title p {
+        font-size: 15px; } }
   .feature-section .feature-filetr-btn button {
     margin-right: 16px;
     padding: 10px 30px;
@@ -1136,6 +1146,19 @@ header .popup-box-active {
     color: #000000;
     background: white;
     border-radius: 4px; }
+    .feature-section .feature-filetr-btn button:last-child {
+      margin-right: 0; }
+    @media (max-width: 575.98px) {
+      .feature-section .feature-filetr-btn button {
+        padding: 10px 25px; } }
+    @media (max-width: 460px) {
+      .feature-section .feature-filetr-btn button {
+        padding: 10px 20px;
+        font-size: 15px; } }
+    @media (max-width: 400px) {
+      .feature-section .feature-filetr-btn button {
+        padding: 10px 18px;
+        font-size: 14px; } }
     .feature-section .feature-filetr-btn button.bg-red {
       background: #FC0012;
       color: white; }
@@ -1310,6 +1333,10 @@ header .popup-box-active {
       .feature-section .main-gird .featured-listing-culoumn .featured-listing-title span svg {
         width: 12px;
         height: 26px; }
+
+@media (max-width: 767.98px) {
+  .main-gird {
+    top: 670px; } }
 
 /* Them Extra class*/
 .autohive {
