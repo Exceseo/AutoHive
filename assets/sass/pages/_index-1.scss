@@ -957,3 +957,98 @@
     }
     
 }
+/* Customer section*/
+.customer-section{
+    .sec-title h2{
+        max-width: 630px;
+        @include screen-576{
+            font-size: 32px;
+        }
+        @include screen-460{
+            font-size: 28px;
+        }
+        @include screen-392{
+            font-size: 25px;
+        }
+    }
+    padding: 120px 0;
+    @include screen-992{
+        padding: 80px 0 70px;
+    }
+    .cr-items{
+        @include screen-1200{
+            max-width: 630px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &:first-child{
+            margin-top: 130px;
+            @include screen-1200{
+                margin-top: 24px;
+            }
+            @include screen-992{
+                margin-top: 30px;
+            }
+        }
+        margin-top: 60px;
+        .cr-column{
+            gap: 24px;
+            .cr-left{
+                h6{
+                    @include screen-460{
+                        font-size: 20px;
+                    }
+                    
+                }
+                p{
+                    font-size: 15.8px;
+                    font-weight: 300;
+                    
+                    @include screen-1200{
+                        max-width: 344px;
+                    }
+                    @include screen-992{
+                        max-width: 100%;
+                    }
+                    @include screen-460{
+                        font-size: 14px;
+                    }
+
+                }
+            }
+            .cr-right{
+                span{
+                    width: 80px;
+                    height: 80px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $white-color;
+                    box-shadow: $light-shaddow;
+                    border-radius: 4px;
+                }
+    
+            }
+        }
+    }
+    .cr-center-img{
+        text-align: center;
+        margin-top: 15px;
+        img{
+            max-width: 87%;
+            @include screen-1400{
+                max-width: 100%;
+            }
+        }
+    }
+}
+.last-chaid-cr{
+    .cr-items{
+        &:first-child{
+            
+            @include screen-992{
+                margin-top: 60px;
+            }
+        }
+    }
+}
