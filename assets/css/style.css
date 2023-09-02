@@ -1679,7 +1679,7 @@ header .popup-box-active {
   .body-type-section .body-content a {
     position: relative;
     z-index: 2;
-    border-radius: 12px;
+    border-radius: 10px;
     text-align: center;
     background: #383838;
     display: -webkit-box;
