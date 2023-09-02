@@ -47,3 +47,20 @@
 %tns{
     transition: all .4s;
 }
+@include screen-1400{
+    .extra-margin{
+        margin-left: -35px;
+        @include screen-768{
+            margin-left: 0;
+        }
+    }
+}
+
+.extra-lg-margin{
+    @include screen-1200{
+        margin-left: -18px;
+    }
+    @include screen-768{
+        margin-left: 0;
+    }
+}
