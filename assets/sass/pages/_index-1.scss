@@ -1371,6 +1371,7 @@
             }
             margin-top: 32px;
             h6{
+                margin-top: 5px;
                 font-size: 18px;
             }
             span{
@@ -1378,7 +1379,9 @@
             }
             .bottom-fd-img{
                 img{
-                    max-width: 100%;
+                    max-width: 70px;
+                    border: 2px solid #d7d2d7;
+                    border-radius: 50%;
                 }
             }
         }
@@ -1389,7 +1392,7 @@
             img{
                 @include screen-1200{
                     margin-top: 60px;
-                    max-width: 90%;
+                    max-width: 92%;
                 }
                 @include screen-992{
                     max-width: 85%;
@@ -1397,7 +1400,9 @@
                 @include screen-768{
                     max-width: 90%;
                 }
+                margin-top: -25px;
                 max-width: 81%;
+                
             }
         }
     }

@@ -1750,19 +1750,23 @@ header .popup-box-active {
     .feedback-section .feedback-left .fd-bottom .bootom-text {
       margin-left: 16px; }
     .feedback-section .feedback-left .fd-bottom h6 {
+      margin-top: 5px;
       font-size: 18px; }
     .feedback-section .feedback-left .fd-bottom span {
       font-size: 15.5px; }
     .feedback-section .feedback-left .fd-bottom .bottom-fd-img img {
-      max-width: 100%; }
+      max-width: 70px;
+      border: 2px solid #d7d2d7;
+      border-radius: 50%; }
   .feedback-section .feedback-right .fd-right {
     text-align: center; }
     .feedback-section .feedback-right .fd-right img {
+      margin-top: -25px;
       max-width: 81%; }
       @media (max-width: 1199.98px) {
         .feedback-section .feedback-right .fd-right img {
           margin-top: 60px;
-          max-width: 90%; } }
+          max-width: 92%; } }
       @media (max-width: 991.98px) {
         .feedback-section .feedback-right .fd-right img {
           max-width: 85%; } }
