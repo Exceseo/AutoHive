@@ -1407,3 +1407,191 @@
         }
     }
 }
+
+/* APP section*/
+.app-section{
+    padding: 60px 0;
+    .app-area{
+        background: linear-gradient(180deg, #111010 0%, rgba(17, 16, 16, 0.81) 100%);
+        padding: 82px 40px 50px;
+        border-radius: 12px;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: url(../images/bodytype.png) no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        .app-left{
+            h2{
+                
+                color: $white-color;
+                margin-bottom: 16px;
+                @include screen-576{
+                    font-size: 32px;
+                }
+                @include screen-500{
+                    font-size: 30px;
+                }
+                @include screen-460{
+                    font-size: 26px;
+                }
+                @include screen-392{
+                    font-size: 22px;
+                }
+            }
+            p{
+                color: $light-color;
+                @include screen-576{
+                    font-size: 15px;
+                }
+                @include screen-500{
+                    font-size: 14.8px;
+                }
+            }
+            .app-btn{
+                margin-top: 32px;
+                a{
+                    color: $white-color;
+                    background: $primary-color;
+                    padding: 12px 22px;
+                    margin-right: 32px;
+                    border-radius: 4px;
+                    @include screen-768{
+                        margin-right: 0;
+                        margin-bottom: 32px;
+                    }
+                    @extend %tns;
+                    &:hover{
+                        background: $heding-color;   
+                    }
+                    .icon-wrapper{
+                        font-size: 30px;
+                    }
+                    .btn-content{
+                        margin-left: 10px;
+                        span{
+                            margin-top: 3px;
+                        }
+                        strong{
+                            font-size: 18px;
+                        }
+                        
+                        
+                    }
+                    &.scnd-btn{
+                        padding: 12px 32px;
+                        @extend %tns;
+                        span{
+                            transition: none;
+                        }
+                        &:hover{
+                            background: $heding-color; 
+                            color: $white-color  
+                        }
+                        background: $white-color;
+                       color: $heding-color;
+                       
+                       .icon-wrapper{
+                        font-size: 34px;
+                    }
+                    }
+                }
+            }
+        }
+
+        .app-right{
+            @include screen-1200{
+                margin-top: 40px;
+            }
+            @include screen-768{
+                margin-top: 18px;
+            }
+            .app-text{
+                z-index: 2;
+                position: relative;
+                top: 22px;
+                left: 12px;
+                @include screen-768{
+                    top: 5px;
+                }
+                h6{
+                    color: $white-color;
+                    max-width: 250px;
+                    margin: 0 auto 0;
+                }
+                .btn-wrapper{
+                    position: absolute;
+                    width: 55px;
+                    height: 55px;
+                    font-size: 24px;
+                    border-radius: 10%;
+                    background: #FC0012;
+                    color: white;
+                    z-index: 2;
+                    -webkit-box-shadow: -41px 35px 54px -18px rgba(252, 0, 18, 0.58);
+                    box-shadow: -41px 35px 54px -18px rgba(252, 0, 18, 0.58);
+                    top: 30px;
+                    left: -37%;
+                    transform: rotate(-15deg);
+                    @include screen-768{
+                        left: -28%;
+                        top: 35px;
+                    }
+                    @include screen-460{
+                        left: -15%;
+                        top: 40px;
+                    }
+                    
+                }
+            }
+            .app-img{
+                margin-top: 17px;
+                position: relative;
+                z-index: 1;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 180px;
+                    top: -130px;
+                    background: url(../images/appshape.png) no-repeat;
+                    width: 362px;
+                    height: 338px;
+                    z-index: -2;
+                    opacity: .1;
+                    @include screen-768{
+                        display: none;
+                    }
+                    @include screen-1400{
+                        left: 92px;
+                    }
+                    @include screen-1200{
+                        left: 180px;
+                        top: -120px
+                    }
+                }
+                img{
+                    margin-top: 30px;
+                    @include screen-1400{
+                        position: relative;
+                        top: 28px;
+                    }
+                    @include screen-1200{
+                        position: relative;
+                        top: 0px;
+                    }
+                    @include screen-576{
+                        width: 108%
+                    }
+
+                }
+            }
+            
+        }
+    }
+}
