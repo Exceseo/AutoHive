@@ -1526,12 +1526,16 @@
                     margin: 0 auto 0;
                 }
                 .btn-wrapper{
+                    &:hover{
+                        background: $heding-color;
+                        color: $primary-color;
+                    }
                     position: absolute;
                     width: 55px;
                     height: 55px;
                     font-size: 24px;
                     border-radius: 10%;
-                    background: #FC0012;
+                    background: $primary-color;
                     color: white;
                     z-index: 2;
                     -webkit-box-shadow: -41px 35px 54px -18px rgba(252, 0, 18, 0.58);
@@ -1539,6 +1543,8 @@
                     top: 30px;
                     left: -37%;
                     transform: rotate(-15deg);
+                    @extend %tns;
+                    
                     @include screen-768{
                         left: -28%;
                         top: 35px;
