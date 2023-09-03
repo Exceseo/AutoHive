@@ -38,7 +38,7 @@ $(function(){
      $('.wc-main-slick').slick({
       arrows: false,
       dots: true,
-      
+      autoplay: true,
      });
   
 
@@ -61,5 +61,32 @@ $(function(){
           delay: 10,
           time: 1000
         });
+
+
+        // Feedback slider
+        $(".feedback-left").slick({
+          arrows: false,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1198.98,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 991.98,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            
+          ]
+         });
 
 });
