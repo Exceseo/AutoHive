@@ -1459,7 +1459,7 @@
                 a{
                     color: $white-color;
                     background: $primary-color;
-                    padding: 12px 22px;
+                    padding: 10px 22px;
                     margin-right: 32px;
                     border-radius: 4px;
                     @include screen-768{
@@ -1485,7 +1485,7 @@
                         
                     }
                     &.scnd-btn{
-                        padding: 12px 32px;
+                        padding: 10px 32px;
                         @extend %tns;
                         span{
                             transition: none;

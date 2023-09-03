@@ -1823,7 +1823,7 @@ header .popup-box-active {
       .app-section .app-area .app-left .app-btn a {
         color: white;
         background: #FC0012;
-        padding: 12px 22px;
+        padding: 10px 22px;
         margin-right: 32px;
         border-radius: 4px; }
         @media (max-width: 767.98px) {
@@ -1841,7 +1841,7 @@ header .popup-box-active {
           .app-section .app-area .app-left .app-btn a .btn-content strong {
             font-size: 18px; }
         .app-section .app-area .app-left .app-btn a.scnd-btn {
-          padding: 12px 32px;
+          padding: 10px 32px;
           background: white;
           color: #000000; }
           .app-section .app-area .app-left .app-btn a.scnd-btn span {
