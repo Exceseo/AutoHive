@@ -1410,7 +1410,7 @@
 
 /* APP section*/
 .app-section{
-    padding: 60px 0;
+    padding: 35px 0;
     .app-area{
         background: linear-gradient(180deg, #111010 0%, rgba(17, 16, 16, 0.81) 100%);
         padding: 82px 40px 50px;
@@ -1618,7 +1618,7 @@
     .blog-left{
         border-radius: 12px;
         padding: 270px 80px 40px 30px;
-        background: url(../images/bg.jpg) no-repeat;
+        background: url(../images/bg.jpg) no-repeat top center;
         z-index: 1;
         @extend %tns;
         &:hover{
@@ -1636,6 +1636,12 @@
             z-index: -1;
         }
         .blog-meta{
+            @include screen-460 {
+                font-size: 14px;
+            }
+            @include screen-400 {
+                font-size: 13.3px;
+            }
             margin-top: -30px;
             .m-right{
                 margin-right: 24px;
@@ -1654,6 +1660,9 @@
             margin-top: 16px;
             h4{
                 margin-bottom: 16px;
+                @include screen-768 {
+                    font-size: 22px;
+                }
             }
             p{
                 font-size: 15.8px
@@ -1751,5 +1760,166 @@
         }
 
         
+    }
+}
+
+.footer-section{
+    padding-top: 120px;
+    background: var(--Gradients, linear-gradient(180deg, #111010 0%, rgba(17, 16, 16, 0.81) 100%));
+
+    .footer-widget{
+       .widget-left{
+        max-width: 530px;
+        color: $white-color !important;
+        h4{
+            margin-bottom: 22px;
+            @include screen-1200{
+                font-size: 26px;
+            }
+            @include screen-392{
+                font-size: 24px;
+            }
+        }
+        p{
+            color: $footer-color;
+            margin-bottom: 36px;
+        }
+        h6{
+            font-size: 20px;
+        }
+        .icon-wrapper{
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            a{
+                width: 56px;
+                height: 56px;
+                display: inline-flex;
+                background: $primary-color;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            span{
+                margin-left: 20px;
+            }
+        }
+        .form-footter{
+            margin-top: 24px;
+            @include screen-992{
+                margin-bottom: 8px;         
+            }
+            form{
+                
+                input{
+                    @include screen-992{
+                        width: 100%;         
+                    }
+                    border-radius: 5px;
+                    border: 1px solid $border-color-there;
+                    background: $heding-primary-color;
+                    padding: 17px 120px 18px 17px ;
+                    @include screen-1200{
+                        padding: 15px 60px 15px 17px ;
+                    }
+                    &::placeholder{  
+                        color: $text-color;
+                    }
+                }
+                button{
+                    margin-left: -4px;
+                    border-radius: 0px 5px 5px 0px;
+                    padding: 15px 25px;
+                    background: $primary-color;
+                    color: $white-color;
+                    font-weight: 500;
+                    @include screen-992{
+                        width: 50%;         
+                    }
+                }
+            }
+        }
+       }
+       .widget-right{
+        .footer-social{
+            span{
+                margin-right: 45px;
+                font-weight: 700;
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 50px;
+                    height: 2px;
+                    background: linear-gradient(to right, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) !important;
+                    position: absolute;
+                    left: 105%;
+                    bottom: 6px;
+                }
+            }
+            ul{
+                margin-top: 10px;
+                justify-content: flex-end;
+                li{
+                    margin-right: 26px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    a{
+                        color: $white-color;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+                
+            } 
+        }
+        .footer-navigation{
+            h6{
+                font-size: 18px;
+                @include screen-576{
+                    margin-top: 40px;          
+                }
+            }
+            a{
+                font-size: 15px;
+                color: $footer-color;
+                margin-bottom: 8px;
+                letter-spacing: 0;
+                padding-left: 0;
+                &:hover{
+                    color: $primary-color;
+                    padding-left: 4px;
+                    letter-spacing: 0.4px;
+                }
+            }
+
+        }
+    }
+
+        
+    }
+        
+    .footer-bottom{
+        color: $white-color !important;
+        font-weight: 450;
+        @include screen-768{
+            font-size: 14px !important;
+            margin-top: 60px;
+        }
+        a{
+            color: inherit;
+            margin-right: 15px;
+            &:hover{
+                color: $primary-color;
+            }
+            @include screen-768{
+                    margin-right: 9px; 
+                }
+            }
+        margin-top: 80px;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        padding: 12px 0;
+
     }
 }
