@@ -39,6 +39,9 @@ button {
   background: transparent; }
 
 /* typography */
+html, body {
+  scroll-behavior: smooth; }
+
 body {
   background: #F5F5F5;
   font-family: "Plus Jakarta Sans", sans-serif; }
@@ -385,7 +388,7 @@ header .popup-box-active {
   -webkit-box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(12, 8, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(12, 8, 0, 0.5);
   box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(12, 8, 0, 0.03), 0 0.275rem 1.25rem -0.0625rem rgba(12, 8, 0, 0.5);
   position: fixed;
-  z-index: 11; }
+  z-index: 51; }
   @media (max-width: 575.98px) {
     header .popup-box-active {
       max-width: 250px;
@@ -1936,6 +1939,7 @@ header .popup-box-active {
           .app-section .app-area .app-right .app-img img {
             width: 108%; } }
 
+/* Blog section*/
 .blog-section {
   padding: 120px 0; }
   @media (max-width: 1199.98px) {
@@ -2066,6 +2070,7 @@ header .popup-box-active {
         .blog-section .blog-items .blog-item-right .blog-explore a:hover {
           color: #FC0012; }
 
+/* Footer section*/
 .footer-section {
   padding-top: 120px;
   background: var(--Gradients, linear-gradient(180deg, #111010 0%, rgba(17, 16, 16, 0.81) 100%)); }
@@ -2204,6 +2209,65 @@ header .popup-box-active {
       @media (max-width: 767.98px) {
         .footer-section .footer-bottom a {
           margin-right: 9px; } }
+
+/*Back to top button*/
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 20;
+  right: 35px;
+  bottom: 30px;
+  background-color: #FC0012;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  border-radius: 10px;
+  display: none;
+  -webkit-animation: backtotop .7s ease;
+  animation: backtotop .7s ease; }
+  .back-to-top:hover {
+    background: #111010;
+    color: white; }
+
+@-webkit-keyframes backtotop {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes backtotop {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*fixed manu*/
+.fixed-manu {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  width: 100%;
+  -webkit-animation: fixedmanu .7s forwards;
+  animation: fixedmanu .7s forwards; }
+
+@-webkit-keyframes fixedmanu {
+  0% {
+    top: -30px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes fixedmanu {
+  0% {
+    top: -30px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
 
 /* Them Extra class*/
 .autohive {

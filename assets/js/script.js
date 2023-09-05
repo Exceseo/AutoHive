@@ -1,5 +1,29 @@
 $(function(){
 
+
+    $(".back-to-top").click(function(){
+      $("html,body").animate({scrollTop: 0},900);
+    });
+
+    // back to bottom button
+    $(window).scroll(function(){
+      let scroling = $(this).scrollTop();
+      // console.log(scroling)
+
+      if (scroling >= 190){
+        $(".nav-section").addClass("fixed-manu");
+      } else{
+        $(".nav-section").removeClass("fixed-manu");
+      }
+
+      if (scroling >= 400) {
+        $('.back-to-top').fadeIn(200);
+      } else {
+        $('.back-to-top').fadeOut();
+      }
+    });
+
+
     // nav manu toggle
     $(".mobile-menu-toggle").on("click", function () {
       $(".popup-box-active").toggleClass("open").fadein();
