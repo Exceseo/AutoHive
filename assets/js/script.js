@@ -1,9 +1,10 @@
 $(function(){
-
+  
 
     $(".back-to-top").click(function(){
       $("html,body").animate({scrollTop: 0},900);
     });
+    
 
     // back to bottom button
     $(window).scroll(function(){
@@ -14,12 +15,11 @@ $(function(){
         $(".nav-section").addClass("fixed-manu");
       } else{
         $(".nav-section").removeClass("fixed-manu");
-      }
-
-      if (scroling >= 400) {
-        $('.back-to-top').fadeIn(200);
+      };
+      if (scroling >= 430) {
+        $(".back-to-top").fadeIn(200);
       } else {
-        $('.back-to-top').fadeOut();
+        $(".back-to-top").fadeOut();
       }
     });
 
