@@ -1,12 +1,16 @@
 $(function(){
-  
 
+  // Preloder
+  $(window).on("load",function(){
+    $(".preeloder").delay(800).fadeOut();
+  });
+
+
+  // back to bottom button & fixed manu
     $(".back-to-top").click(function(){
       $("html,body").animate({scrollTop: 0},900);
     });
-    
-
-    // back to bottom button
+      
     $(window).scroll(function(){
       let scroling = $(this).scrollTop();
       // console.log(scroling)
