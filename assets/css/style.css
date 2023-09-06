@@ -765,14 +765,12 @@ header .popup-box-active {
     .hero-section .hero-from .serch-btn {
       max-width: 630px;
       margin: 0 auto 13px; }
-      .hero-section .hero-from .serch-btn button {
+      .hero-section .hero-from .serch-btn a {
         color: white;
         margin-right: 18px;
         padding: 2px 20px;
         font-weight: 500; }
-        .hero-section .hero-from .serch-btn button a {
-          color: inherit; }
-        .hero-section .hero-from .serch-btn button :last-child {
+        .hero-section .hero-from .serch-btn a :last-child {
           margin: 0; }
     .hero-section .hero-from form {
       padding: 20px;
@@ -883,7 +881,8 @@ header .popup-box-active {
   color: #FC0012 !important;
   padding: 2px 20px;
   border-radius: 4px;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .activebtn::after, .actived::after {
     content: "";
     width: 22px;
@@ -896,7 +895,11 @@ header .popup-box-active {
     transform: translateX(-50%);
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background: white; }
+    background: white;
+    z-index: -1;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s; }
 
 /*------------ Why choose Us section start -------------*/
 .sec-title {
@@ -1850,6 +1853,10 @@ header .popup-box-active {
     height: 120px;
     position: relative;
     z-index: 3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     color: white; }
     .body-type-section .body-content a span svg {
       width: 75px; }

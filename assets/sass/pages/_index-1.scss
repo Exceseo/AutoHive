@@ -32,15 +32,12 @@
         .serch-btn{
             max-width: 630px;
             margin: 0 auto 13px;
-            button{
+            a{
                 color: $white-color;
                 margin-right: 18px;
                 padding: 2px 20px;
                 font-weight: 500;
-                a{
-                    color: inherit;
-                    
-                }
+            
                 :last-child{
                     margin: 0;
                 }
@@ -175,6 +172,7 @@
     padding: 2px 20px;
     border-radius: 4px;
     position: relative;
+    z-index: 1;
     &::after{
         content: "";
         width: 22px;
@@ -185,6 +183,8 @@
         transform: translateX(-50%);
         clip-path: polygon(50% 100%, 0 0, 100% 0);
         background: $white-color;
+        z-index: -1;
+        transition: all .4s;
     }
 }
 
@@ -1292,6 +1292,7 @@
             height: 120px;
             position: relative;
             z-index: 3;
+            flex-direction: column;
             span{
                 svg{
                     
